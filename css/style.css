@@ -1,0 +1,84 @@
+section.slider{
+	width: 800px;
+	height: 400px;
+	border: 2px solid #555;
+	position: relative;
+}
+.sliderWrap{
+	overflow: hidden;
+}
+.sliderImage{
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 0;
+}
+.sliderImage > li{
+	list-style-type: none;
+	display: inline-block;
+}
+.sliderImage > li > img{
+	width: 800px;
+	height: 400px;
+}
+
+.wrapNav{
+	position: absolute;
+	bottom: 0;
+	width: 800px;
+	z-index: 1;
+	padding-left: 10px;
+}
+
+.opacityCont{
+	position: absolute;
+	background-color: #999;
+	opacity: 0.4;
+	width: 800px;
+	height: 50px;
+	bottom: 0;
+}
+
+.sliderArrow > div{
+	display: inline-block;
+	margin: 2px 3px;
+	border: 20px solid transparent;
+	cursor: pointer;
+	float: left;
+	line-height: 0.8;
+	opacity: 0.5;
+}
+
+.sliderArrow > div:nth-child(1){
+	border-right-color: #333;  
+}
+.sliderArrow > div:nth-child(2){
+	border-left-color: #333;  
+	opacity: 1;
+}
+
+.sliderPages{
+	float: left;
+}
+
+.sliderPages ul{
+	margin: 0;
+	padding: 0;
+}
+
+.sliderPages > ul > li{
+	list-style-type: none;
+	display: inline-block;
+	border: 1px solid;
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.sliderPages > ul > li:first-child{
+	margin-left: -2px;
+}
